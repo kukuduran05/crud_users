@@ -1,0 +1,8 @@
+h1= 'Deseas eliminar el usuario: Nombre: ' +usuario.nombre+ ' Apellidos: ' +usuario.apellidos
+tabla
+    tr
+        td
+            form(method='POST' action='/delete/'+usuario.id)
+                button.btn.btn-primary(type='submit') Eliminar
+        td
+            a(href='/person') cancelar

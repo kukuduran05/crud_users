@@ -1,0 +1,13 @@
+html
+	head
+		title= 'Lista de Roles'
+		style
+			include style.css
+	body
+		a(href='/person') Regresar
+
+	table
+		for rol in rolesList
+			tr
+				td= rol.id
+				td= rol.nombre

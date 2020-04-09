@@ -1,0 +1,10 @@
+- Una vez que se haya descargado el proyecto se deberá crear la Base de datos.
+- Se debe ejecutar el archivo database.sql en la plataforma de su preferencia.
+- Una vez que se crearon las tablas y la base de datos se ejecuta el sig comando
+    * npm install
+- se deben instalar las dependencias:
+    * npm install express mysql body-parser pug --save
+- para ejecutar el proyecto se debe ingresar a lo siguiente
+    * ingresar a cd crud_eval
+    * correr el proyecto con el comando node app.js
+- Una vez que se ejecute el proyecto abrir la url http://localhost:3000/person

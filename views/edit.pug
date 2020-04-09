@@ -1,0 +1,30 @@
+html
+    head
+        title= 'Editar Usuario'
+            style
+                include style.css
+    body
+        a(href='/person') Regresar
+    table
+        tr
+            td=usuario.id
+    form(method='POST' action='/person/'+usuario.id)
+        div.form-group
+            label(for='nick') Nick:
+            input#nick.form-control(type='text', name='nick', value=usuario.nick)
+        div.form-group
+            label(for='nombre') Nombre:
+            input#nombre.form-control(type='text', name='nombre', value=usuario.nombre)
+        div.form-group
+            label(for='apellidos') Apellidos:
+            input#apellidos.form-control(type='text', name='apellidos', value=usuario.apellidos)
+        div.form-group
+            label(for='password') Password:
+            input#password.form-control(type='text', name='password', value=usuario.password)
+        div.form-group
+            label(for='rol') Rol:
+            input#rol.form-control(type='text', name='rol', value=usuario.rolName)
+        div.form-group
+            label(for='correo') Correo:
+            input#correo.form-control(type='text', name='correo', value=usuario.correo)
+        button.btn.btn-primary(type='submit') Actualizar

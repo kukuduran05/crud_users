@@ -1,0 +1,32 @@
+html
+	head
+		title= 'Lista de Usuarios'
+		style
+			include style.css
+	body
+		a(href='/roles') Lista de Roles
+		h1= 'Lista de Usuarios'
+		a(href='/new') Nuevo Usuario
+
+	table
+		tr
+			td= 'id'
+			td= 'nick'
+			td= 'nombre'
+			td= 'apellidos'
+			td= 'rol'
+			td= 'correo'
+		for person in personList	
+			tr
+				td= person.id
+				td= person.nick
+				td= person.nombre
+				td= person.apellidos
+				td= person.rol
+				td= person.correo
+				td
+					a(href='/person/'+person.id) ver
+				td
+					a(href='/edit/'+person.id) editar
+				td
+					a(href='/delete/'+person.id) borrar

@@ -1,0 +1,25 @@
+{
+  "name": "crud_users",
+  "version": "1.0.0",
+  "description": "- Una vez que se haya descargado el proyecto se deberá crear la Base de datos.\r - Se debe ejecutar el archivo database.sql en la plataforma de su preferencia.\r - Una vez que se crearon las tablas y la base de datos se ejecuta el sig comando\r     * npm install\r - se deben instalar las dependencias:\r     * npm install express mysql body-parser pug --save\r - para ejecutar el proyecto se debe ingresar a lo siguiente\r     * ingresar a cd crud_eval\r     * correr el proyecto con el comando node app.js\r - Una vez que se ejecute el proyecto abrir la url http://localhost:3000/person",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kukuduran05/crud_users.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kukuduran05/crud_users/issues"
+  },
+  "homepage": "https://github.com/kukuduran05/crud_users#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pug": "^2.0.4"
+  }
+}

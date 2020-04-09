@@ -1,0 +1,30 @@
+html
+    head
+        title= 'Nuevo Usuario'
+            style
+                include style.css
+    body
+        a(href='/person') Regresar
+    form(method='POST' action='/person')
+        div.form-group
+            label(for='nick') Nick:
+            input#nick.form-control(type='text', name='nick' required)
+        div.form-group
+            label(for='nombre') Nombre:
+            input#nombre.form-control(type='text', name='nombre' required)
+        div.form-group
+            label(for='apellidos') Apellidos:
+            input#apellidos.form-control(type='text', name='apellidos')
+        div.form-group
+            label(for='password') Password:
+            input#password.form-control(type='password', name='password' required)
+        div.form-group
+            label(for='rol') Rol:
+            select#propertyType.select.form-control.input-lg(form='addProperty', name='propertyType')
+                option(value='0') -- Select --
+                for rol in rolesList
+                    option(value=rol.id) #{rol.nombre}
+        div.form-group
+            label(for='correo') Correo:
+            input#correo.form-control(type='email', name='correo' required)
+        button.btn.btn-primary(type='submit') Crear
